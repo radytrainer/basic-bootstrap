@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="logo" href="#">咖啡</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Login
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">
+                            Register
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5" id="banner-1">
+        <h1>PNC Coffee</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- 8 Cards -->
+            <div class="col-md-3 mb-4" *ngFor="let card of cards">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/free-photo/coffee-cup-wooden-table-dark-wall_155003-8192.jpg" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">This is a description of the card content.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of cards">
+                <div class="card h-100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/640px-Cappuccino_at_Sightglass_Coffee.jpg" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">This is a description of the card content.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of cards">
+                <div class="card h-100">
+                    <img src="https://www.shutterstock.com/image-photo/closeup-hot-coffee-latte-art-600nw-2494192235.jpg" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">This is a description of the card content.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of cards">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/premium-photo/coffee-cup-coffee-beans-table_45996-193.jpg" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">This is a description of the card content.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of cards">
+                <div class="card h-100">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/025/282/026/small_2x/stock-of-mix-a-cup-coffee-latte-more-motive-top-view-foodgraphy-generative-ai-photo.jpg" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">This is a description of the card content.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of cards">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/premium-photo/cup-coffee-coffee-beans-beautiful-still-life_406939-4284.jpg" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">This is a description of the card content.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of cards">
+                <div class="card h-100">
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p.jpg" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">This is a description of the card content.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4" *ngFor="let card of cards">
+                <div class="card h-100">
+                    <img src="https://img.freepik.com/premium-photo/coffee-cup-coffee-beans_200402-9661.jpg" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">This is a description of the card content.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat this block 8 times or dynamically loop it -->
+        </div>
+    </div>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="registerName" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Create a password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
